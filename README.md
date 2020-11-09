@@ -1,9 +1,9 @@
 # Youtube Ad Skipper
 
-Android App that skips Ads on Youtube. Never worry about clicking the annoying ads again! This app does it for you :)
+Android App that skips Video Ads on Youtube. Never worry about clicking Skip Button to skip annoying ads again! This app does it for you :)
 
 Youtube Ad Skipper does three things when you open the Youtube app:
-- Waits for Ads to appear;
+- Waits for Video Ads to appear;
 - When Ad appears, it mutes the media volume;
 - Clicks the <kbd>Skip Ad</kbd> button as soon as it appears and unmute the media volume.
 
