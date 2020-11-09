@@ -5,7 +5,7 @@ Android App that skips Ads on Youtube. Never worry about clicking the annoying a
 Youtube Ad Skipper does three things when you open the Youtube app:
 - Waits for Ads to appear;
 - When Ad appears, it mutes the media volume;
-- Clicks the <kbd>Skip Ad</kbd> button as soon as it appears and unmute the media volume
+- Clicks the <kbd>Skip Ad</kbd> button as soon as it appears and unmute the media volume.
 
 Youtube Ad Skipper acts as an Accessibility Service, so after installing it, you need to enable it manually, as Accessibility services have elevated permissions on your device and can read and interact with all the device's screen.
 
@@ -18,9 +18,9 @@ This app uses Android's [AccessibilityService](https://developer.android.com/gui
 Follow the below steps to activate it:
 
 - [Install apk](https://github.com/alfeugds/youtubeadskipper/releases/latest);
-- Go to `Settings -> Accessibility` and click **Youtube Ad Skipper**
-- Enable the service
-- Android will warn that the app will have access to see and interact with all screens. 
+- Go to `Settings -> Accessibility` and click **Youtube Ad Skipper**;
+- Enable the service;
+- Android will warn that the app will have access to see and interact with all screens.
 
 ## Building it yourself
 
