@@ -17,7 +17,7 @@ This app uses Android's [AccessibilityService](https://developer.android.com/gui
 
 Follow the below steps to activate it:
 
-- [Install apk](https://github.com/alfeugds/youtubeadskipper/releases);
+- [Install apk](https://github.com/alfeugds/youtubeadskipper/releases/latest);
 - Go to `Settings -> Accessibility` and click **Youtube Ad Skipper**
 - Enable the service
 - Android will warn that the app will have access to see and interact with all screens. 
