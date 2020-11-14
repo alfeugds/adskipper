@@ -1,5 +1,7 @@
 # Youtube Ad Skipper
 
+![Youtube Ad Skipper Logo](./logo_web_hi_res_512.png)
+
 Android App that skips Video Ads on Youtube. Never worry about clicking Skip Button to skip annoying ads again! This app does it for you :)
 
 Youtube Ad Skipper does three things when you open the Youtube app:
