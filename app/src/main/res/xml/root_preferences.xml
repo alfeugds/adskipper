@@ -4,15 +4,15 @@
 
         <SwitchPreferenceCompat
             app:key="enable-service"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
+            app:summaryOff="@string/ad_skipper_enabled_off"
+            app:summaryOn="@string/ad_skipper_enabled_on"
             app:title="@string/ad_skipper_enabled_title" />
 
         <SwitchPreferenceCompat
             app:dependency="enable-service"
             app:key="mute-audio"
-            app:summaryOff="@string/attachment_summary_off"
-            app:summaryOn="@string/attachment_summary_on"
+            app:summaryOff="@string/mute_ad_enabled_off"
+            app:summaryOn="@string/mute_ad_enabled_on"
             app:title="@string/mute_ad_enabled_title" />
 
     </PreferenceCategory>
