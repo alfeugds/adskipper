@@ -8,13 +8,10 @@
     <string name="youtube_ad_skipper_header">Enable Service</string>
 
     <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
 
     <!-- Service Preferences -->
     <string name="ad_skipper_enabled_title">Enable Youtube Ad Skipper</string>
-    <string name="attachment_summary_on">Automatically skip ads on Youtube
-    </string>
+    <string name="attachment_summary_on">"Automatically skip ads on Youtube"</string>
     <string name="attachment_summary_off">Don\'t skip ads on Youtube</string>
 
     <!--Youtube ad skipper-->

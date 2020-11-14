@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pular Anúncios no Youtube</string>
+    <string name="title_activity_settings">Configurações</string>
+    <string name="messages_header">Mensagens</string>
+    <string name="youtube_ad_skipper_header">Habilitar Serviço em Segundo Plano</string>
+    <string name="ad_skipper_enabled_title">Habilitar Pular Anúncios no Youtube</string>
+    <string name="attachment_summary_on">Pular Anúncios Automaticamente no Youtube</string>
+    <string name="attachment_summary_off">Não pular Anúncios no Youtube</string>
+    <string name="accessibility_service_label">Pular Anúncios no Youtube</string>
+    <string name="accessibility_service_description">Este serviço pula Anúncios de Vídeo no Youtube, e os silencia quando eles estão tocando. Esta é uma forma não intrusiva de se livrar dos anúncios de vídeo enquanto você assiste seus vídeos.</string>
+    <string name="ad_skipper_title">Habilitar Pular Anúncios</string>
+    <string name="ad_skipper_title_on">Pular Anúncios Habilitado</string>
+    <string name="ad_skipper_title_off">Pular Anúncios Desabilitado</string>
+    <string name="mute_ad_enabled_title">Silenciar Áudio quando Anúncios estiverem tocando</string>
+</resources>
