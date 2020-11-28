@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.alfeugds.youtubeadskipper">
+    package="com.alfeugds.adskipper">
 
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
 
@@ -15,7 +15,7 @@
         android:theme="@style/Theme.YoutubeAdSkipper"
         android:fullBackupContent="@xml/backup_descriptor">
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.alfeugds.adskipper.SettingsActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <service
-            android:name=".YoutubeAccessibilityService"
+            android:name="com.alfeugds.adskipper.AdSkipperAccessibilityService"
             android:label="@string/accessibility_service_label"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>

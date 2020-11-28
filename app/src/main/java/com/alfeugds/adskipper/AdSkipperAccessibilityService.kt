@@ -1,4 +1,4 @@
-package com.alfeugds.youtubeadskipper
+package com.alfeugds.adskipper
 
 import android.accessibilityservice.AccessibilityService
 import android.content.Context
@@ -10,9 +10,9 @@ import android.view.accessibility.AccessibilityNodeInfo
 import androidx.preference.PreferenceManager
 
 
-class YoutubeAccessibilityService : AccessibilityService() {
+class AdSkipperAccessibilityService : AccessibilityService() {
 
-    private val TAG = "YoutubeAdSkipperService"
+    private val TAG = "AdSkipperAccessibilityService"
     private val AD_LEARN_MORE_BUTTON_ID = "com.google.android.youtube:id/player_learn_more_button"
     private val SKIP_AD_BUTTON_ID = "com.google.android.youtube:id/skip_ad_button"
 

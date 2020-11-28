@@ -1,4 +1,4 @@
-package com.alfeugds.youtubeadskipper
+package com.alfeugds.adskipper
 
 import android.accessibilityservice.AccessibilityService
 import android.accessibilityservice.AccessibilityServiceInfo
@@ -109,14 +109,14 @@ class SettingsActivity : AppCompatActivity() {
         }
 
         private fun isYoutubeServiceEnabled(): Boolean {
-            return isAccessibilityServiceEnabled(context, YoutubeAccessibilityService::class.java)
+            return isAccessibilityServiceEnabled(context, AdSkipperAccessibilityService::class.java)
         }
 
 
         override fun onSharedPreferenceChanged(sharedPreferences: SharedPreferences?, key: String?) {
             Log.v(LOG_TAG, "onSharedPreferenceChanged()...")
 
-            val isServiceEnabled = isAccessibilityServiceEnabled(context, YoutubeAccessibilityService::class.java)
+            val isServiceEnabled = isAccessibilityServiceEnabled(context, AdSkipperAccessibilityService::class.java)
             Log.v(LOG_TAG, "isAccessibilityServiceEnabled(): $isServiceEnabled")
 
             val setting: Boolean? = sharedPreferences?.getBoolean(key, false) ?: return

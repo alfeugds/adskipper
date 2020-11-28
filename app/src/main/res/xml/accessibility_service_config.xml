@@ -8,4 +8,4 @@
     android:description="@string/accessibility_service_description"
     android:notificationTimeout="100"
     android:packageNames="com.google.android.youtube"
-    android:settingsActivity="com.alfeugds.youtubeadskipper.SettingsActivity" />
+    android:settingsActivity="com.alfeugds.adskipper.SettingsActivity" />

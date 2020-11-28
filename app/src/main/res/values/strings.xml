@@ -1,26 +1,25 @@
 <resources>
-    <string name="app_name">Youtube Ad Skipper</string>
+    <string name="app_name">Ad Skipper</string>
     <!-- Settings Activity Title -->
 
     <!-- Preference Titles -->
-    <string name="youtube_ad_skipper_header">Enable Service</string>
+    <string name="ad_skipper_header">Enable Service</string>
 
     <!-- Messages Preferences -->
 
     <!-- Service Preferences -->
     <string name="ad_skipper_enabled_title">Enable Ad Skipper</string>
-    <string name="ad_skipper_enabled_on">"Automatically skip ads on Youtube"</string>
-    <string name="ad_skipper_enabled_off">Don\'t skip ads on Youtube</string>
+    <string name="ad_skipper_enabled_on">Automatically skip ads</string>
+    <string name="ad_skipper_enabled_off">Don\'t skip video ads</string>
 
-    <!--Youtube ad skipper-->
-    <string name="accessibility_service_label">Youtube Ad Skipper</string>
-    <string name="accessibility_service_description">This service skips Ads on Youtube videos, and mutes the Media audio while Ads are playing.
-    This is a non-intrusive way to (partially) get rid of annoying Ads while watching your videos.</string>
+    <!--ad skipper-->
+    <string name="accessibility_service_label">Ad Skipper</string>
+    <string name="accessibility_service_description">This service skips Video Ads, and mutes the Media audio while Ads are playing. This is a non-intrusive way to (partially) get rid of annoying Ads while watching your videos.</string>
     <string name="mute_ad_enabled_title">Mute Ad</string>
     <string name="mute_ad_enabled_on">Audio will be muted when Ad is playing.</string>
     <string name="mute_ad_enabled_off">Audio will not be muted when Ad is playing</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_open_accessibility_settings_title">Enable Service</string>
-    <string name="dialog_open_accessibility_settings_message">On the next screen, select Youtube Ad Skipper on the list and enable it.</string>
+    <string name="dialog_open_accessibility_settings_message">On the next screen, select \"Ad Skipper\" on the list and enable it.</string>
 </resources>

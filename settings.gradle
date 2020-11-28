@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name = "Youtube Ad Skipper"
+rootProject.name = "Ad Skipper"

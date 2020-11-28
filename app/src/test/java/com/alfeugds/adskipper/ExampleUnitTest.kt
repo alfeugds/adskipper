@@ -1,4 +1,4 @@
-package com.alfeugds.youtubeadskipper
+package com.alfeugds.adskipper
 
 import org.junit.Test
 
