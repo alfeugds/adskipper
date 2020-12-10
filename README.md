@@ -1,6 +1,11 @@
 # Ad Skipper
 
-![Ad Skipper Logo](./images/logo_web_hi_res_512.png)
+<a href='https://play.google.com/store/apps/details?id=com.alfeugds.adskipper&utm_source=github-readme&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' width="200" src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>
+
+## Screenshots
+
+<img alt='Ad Skipper Screenshot' width="300" src='./images/screenshot-skip-ad.png'/>
+<img alt='Ad Skipper Screenshot Settings' width="300" src='./images/screenshot-settings.jpg'/>
 
 Open-source Android App that skips Video Ads on Youtube. Never worry about clicking "Skip Button" to skip annoying ads again! This app does it for you :)
 
