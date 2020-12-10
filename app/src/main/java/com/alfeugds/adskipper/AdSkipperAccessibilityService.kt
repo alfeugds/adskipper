@@ -12,9 +12,14 @@ import androidx.preference.PreferenceManager
 
 class AdSkipperAccessibilityService : AccessibilityService() {
 
-    private val TAG = "AdSkipperAccessibilityService"
+    private val TAG = "AdSkipperService"
     private val AD_LEARN_MORE_BUTTON_ID = "com.google.android.youtube:id/player_learn_more_button"
     private val SKIP_AD_BUTTON_ID = "com.google.android.youtube:id/skip_ad_button"
+    private val AD_PROGRESS_TEXT = "com.google.android.youtube:id/ad_progress_text"
+    private val APP_PROMO_AD_CTA_OVERLAY = "com.google.android.youtube:id/app_promo_ad_cta_overlay"
+    private val AD_COUNTDOWN = "com.google.android.youtube:id/ad_countdown"
+
+
 
     private var isMuted = false
 
@@ -104,13 +109,16 @@ class AdSkipperAccessibilityService : AccessibilityService() {
 
             val adLearnMoreElement = rootInActiveWindow.findAccessibilityNodeInfosByViewId(AD_LEARN_MORE_BUTTON_ID).getOrNull(0)
             val skipAdButton = rootInActiveWindow.findAccessibilityNodeInfosByViewId(SKIP_AD_BUTTON_ID)?.getOrNull(0)
+            val adProgressText = rootInActiveWindow.findAccessibilityNodeInfosByViewId(AD_PROGRESS_TEXT)?.getOrNull(0)
+            val appPromoAdCTAOverlay = rootInActiveWindow.findAccessibilityNodeInfosByViewId(APP_PROMO_AD_CTA_OVERLAY)?.getOrNull(0)
+            val adCountdown = rootInActiveWindow.findAccessibilityNodeInfosByViewId(AD_COUNTDOWN)?.getOrNull(0)
 
-            if (adLearnMoreElement == null && skipAdButton == null) {
+            if (adLearnMoreElement == null && skipAdButton == null && adProgressText == null && appPromoAdCTAOverlay == null && adCountdown == null) {
                 unmuteMedia()
                 Log.v(TAG, "No ads yet...")
                 return
             }
-            Log.i(TAG, "player_learn_more_button or skipAdButton are visible. Trying to skip ad...")
+            Log.i(TAG, "player_learn_more_button or skipAdButton or adProgressText are visible. Trying to skip ad...")
 
             muteMedia()
 
