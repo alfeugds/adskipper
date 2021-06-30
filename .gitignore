@@ -13,3 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+app/debug/app-debug.aab
+app/release/app-release.aab

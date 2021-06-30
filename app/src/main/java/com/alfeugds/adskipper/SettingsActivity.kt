@@ -75,11 +75,15 @@ class SettingsActivity : AppCompatActivity() {
                 Log.e(LOG_TAG, "Could not create alert dialog, builder is null.")
                 return
             }
+            if(isYoutubeServiceEnabled()){
+                return
+            }
             builder.apply {
                 setCancelable(false)
                 setPositiveButton(R.string.dialog_ok
                 ) { _, _ ->
                     // User clicked OK button
+                    setEnableServiceSetting(true)
                     val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
                     startActivityForResult(intent, 0)
                     setMuteAudioSetting(true)
@@ -89,6 +93,7 @@ class SettingsActivity : AppCompatActivity() {
                     // User cancelled the dialog
                     Log.i(LOG_TAG, "User cancelled action to open accessibility settings.")
                     setEnableServiceSetting(false)
+                    activity?.onBackPressed()
                 }
                 setTitle(R.string.dialog_open_accessibility_settings_title)
                 setMessage(R.string.dialog_open_accessibility_settings_message)
@@ -101,6 +106,7 @@ class SettingsActivity : AppCompatActivity() {
             super.onResume()
             refreshUIWithServiceStatus()
             preferenceScreen.sharedPreferences.registerOnSharedPreferenceChangeListener(this)
+            enableAccessibilityService()
         }
 
         override fun onPause() {
@@ -126,7 +132,8 @@ class SettingsActivity : AppCompatActivity() {
             when (key) {
                 SETTINGS_ENABLE_SERVICE -> {
                     if (setting == true && !isServiceEnabled) {
-                        enableAccessibilityService()
+                        //enableAccessibilityService()
+                        Log.v(LOG_TAG,"Service is not enabled.")
                     }
                 }
             }

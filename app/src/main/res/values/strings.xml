@@ -20,6 +20,6 @@
     <string name="mute_ad_enabled_off">Audio will not be muted when Ad is playing</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancel</string>
-    <string name="dialog_open_accessibility_settings_title">Enable Service</string>
-    <string name="dialog_open_accessibility_settings_message">On the next screen, select \"Ad Skipper\" on the list and enable it.</string>
+    <string name="dialog_open_accessibility_settings_title">Attention!</string>
+    <string name="dialog_open_accessibility_settings_message">Follow the below instructions carefully, otherwise the app won\'t work.\n\nAfter clicking OK, the Accessibility configuration screen will show up.\nFind and enable \"Ad Skipper\" service.</string>
 </resources>

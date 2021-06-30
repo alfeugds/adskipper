@@ -12,6 +12,6 @@
     <string name="mute_ad_enabled_off">Áudio não será silenciado enquanto Anúncios estiverem tocando</string>
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancelar</string>
-    <string name="dialog_open_accessibility_settings_title">Habilitar Serviço</string>
-    <string name="dialog_open_accessibility_settings_message">Na próxima tela, selecione a opção \"Pular Anúncios\" e habilite-a.</string>
+    <string name="dialog_open_accessibility_settings_title">Atenção!</string>
+    <string name="dialog_open_accessibility_settings_message">Siga atentamente as instruções abaixo. Caso contrário, Os anúncios não serão silenciados.\n\nAo clicar em OK, abrirá as configurações de Acessibilidade. Encontre a opção \"Pular Anúncios\" e habilite-a.</string>
 </resources>
