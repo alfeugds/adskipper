@@ -25,6 +25,7 @@
         </activity>
         <service
             android:name="com.alfeugds.adskipper.AdSkipperAccessibilityService"
+            android:stopWithTask="true"
             android:label="@string/accessibility_service_label"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>

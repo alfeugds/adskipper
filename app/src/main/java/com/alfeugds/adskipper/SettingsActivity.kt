@@ -6,6 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.content.pm.ServiceInfo
+import android.os.Build
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
@@ -69,37 +70,51 @@ class SettingsActivity : AppCompatActivity() {
             return false
         }
 
+        private val service: AdSkipperAccessibilityService? get() {
+            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+                return null
+            }
+            return AdSkipperAccessibilityService.getInstance()
+        }
+
         private fun enableAccessibilityService() {
+            Log.i(LOG_TAG, "service enabled = " + service?.isRunning)
             val builder = context?.let { AlertDialog.Builder(it) }
             if (builder == null) {
                 Log.e(LOG_TAG, "Could not create alert dialog, builder is null.")
                 return
             }
             if(isYoutubeServiceEnabled()){
+                Log.i(LOG_TAG, "service enabled.")
                 return
             }
-            builder.apply {
-                setCancelable(false)
-                setPositiveButton(R.string.dialog_ok
-                ) { _, _ ->
-                    // User clicked OK button
-                    setEnableServiceSetting(true)
-                    val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
-                    startActivityForResult(intent, 0)
-                    setMuteAudioSetting(true)
+            try {
+                builder.apply {
+                    setCancelable(false)
+                    setPositiveButton(R.string.dialog_ok
+                    ) { _, _ ->
+                        // User clicked OK button
+                        setEnableServiceSetting(true)
+                        setMuteAudioSetting(true)
+                        val intent = Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)
+                        startActivityForResult(intent, 0)
+                    }
+                    setNegativeButton(R.string.dialog_cancel
+                    ) { _, _ ->
+                        // User cancelled the dialog
+                        Log.i(LOG_TAG, "User cancelled action to open accessibility settings.")
+                        setEnableServiceSetting(false)
+                        activity?.onBackPressed()
+                    }
+                    setTitle(R.string.dialog_open_accessibility_settings_title)
+                    setMessage(R.string.dialog_open_accessibility_settings_message)
                 }
-                setNegativeButton(R.string.dialog_cancel
-                ) { _, _ ->
-                    // User cancelled the dialog
-                    Log.i(LOG_TAG, "User cancelled action to open accessibility settings.")
-                    setEnableServiceSetting(false)
-                    activity?.onBackPressed()
-                }
-                setTitle(R.string.dialog_open_accessibility_settings_title)
-                setMessage(R.string.dialog_open_accessibility_settings_message)
+                builder.create()
+                builder.show()
+            } catch (error: Exception) {
+                Log.e(LOG_TAG, "Something went wrong...", error)
             }
-            builder.create()
-            builder.show()
+
         }
 
         override fun onResume() {

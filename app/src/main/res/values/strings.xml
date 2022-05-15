@@ -21,5 +21,5 @@
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancel</string>
     <string name="dialog_open_accessibility_settings_title">Attention!</string>
-    <string name="dialog_open_accessibility_settings_message">Follow the below instructions carefully, otherwise the app won\'t work.\n\nAfter clicking OK, the Accessibility configuration screen will show up.\nFind and enable \"Ad Skipper\" service.</string>
+    <string name="dialog_open_accessibility_settings_message">Follow the below instructions carefully, otherwise the app won\'t silence Youtube ads.\n\nAfter clicking OK, the Accessibility configuration screen will show up.\nFind and enable \"Ad Skipper\" service.\n\nIf the app stopped working suddenly, try to force stop the app, disable and enable the Accessibility again.\nIf that does not work either, reinstall the app. Sorry for the inconvenience.</string>
 </resources>

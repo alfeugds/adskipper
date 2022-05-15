@@ -13,5 +13,5 @@
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancelar</string>
     <string name="dialog_open_accessibility_settings_title">Atenção!</string>
-    <string name="dialog_open_accessibility_settings_message">Siga atentamente as instruções abaixo. Caso contrário, Os anúncios não serão silenciados.\n\nAo clicar em OK, abrirá as configurações de Acessibilidade. Encontre a opção \"Pular Anúncios\" e habilite-a.</string>
+    <string name="dialog_open_accessibility_settings_message">Siga atentamente as instruções abaixo. Caso contrário, os anúncios do Youtube não serão silenciados.\n\nAo clicar em OK, abrirá as configurações de Acessibilidade. Encontre a opção \"Pular Anúncios\" e habilite-a.\n\nSe o app parou de funcionar de repente, tente forçar a parada do app nas configurações do sistema, desative e ative a configuração de Acessibilidade novamente.\nSe isso também não funcionar, reinstale o app. Lamento a inconveniência.</string>
 </resources>
